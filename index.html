@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Product Page</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">Logo</div>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="product-section container">
+            <div class="product-image">
+                <img src="placeholder-image.png" alt="Product Image">
+            </div>
+            <div class="product-details">
+                <h1 class="product-title">Naam product</h1>
+                <p class="product-price">€26,95</p>
+                <p class="product-description">Korte productomschrijving</p>
+                <button class="button">Bestellen</button>
+            </div>
+        </section>
+
+        <section class="pros-cons container">
+            <div class="pros">
+                <h2>Plus- en minpunten</h2>
+                <ul>
+                    <li>✓ Voordeel</li>
+                    <li>X Nadeel</li>
+                </ul>
+            </div>
+            <div class="cons">
+                <h2>Omschrijving</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.</p>
+            </div>
+        </section>
+
+        <section class="related-products container">
+            <h2>Gerelateerde producten</h2>
+            <ul>
+                <li>
+                    <img src="placeholder-image.png" alt="Product 1">
+                    <h3>Product 1</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </li>
+                <li>
+                    <img src="placeholder-image.png" alt="Product 2">
+                    <h3>Product 2</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </li>
+                <li>
+                    <img src="placeholder-image.png" alt="Product 3">
+                    <h3>Product 3</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </li>
+            </ul>
+        </section>
+
+        <section class="contact container" id="contact">
+            <h2>Contact Us</h2>
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="button">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Your Company. All rights reserved.</p>
+            <p><a href="#">Privacy Policy</a> | <a href="#">Terms & Conditions</a> | <a href="#">Cookie Policy</a> | <a href="#">Contact</a></p>
+        </div>
+    </footer>
+</body>
+</html>
