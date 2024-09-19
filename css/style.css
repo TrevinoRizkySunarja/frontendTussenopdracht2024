@@ -1,15 +1,19 @@
 :root {
-    --primary-color: #333;
-    --secondary-color: #f2f2f2;
-    --accent-color: #ff6600;
+    --primary-color: #176B87;
+    --secondary-color: #EEF5FF;
+    --accent-color: #FF0000;
+    --light-blue: #B4D4FF;
+    --medium-blue: #86B6F6;
+    --font-primary: 'pf-uniform', sans-serif;
     --font-size-large: 1.5em;
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: var(--font-primary);
     line-height: 1.6;
     margin: 0;
     padding: 0;
+    background-color: var(--secondary-color);
 }
 
 .container {
@@ -19,13 +23,12 @@ body {
 }
 
 header {
-    background-color: var(--secondary-color);
+    background-color: var(--light-blue);
     padding: 20px 0;
 }
 
-.logo {
-    font-weight: bold;
-    font-size: var(--font-size-large);
+.logo img {
+    max-width: 100px;
 }
 
 nav ul {
@@ -43,12 +46,13 @@ nav li {
 nav a {
     text-decoration: none;
     color: var(--primary-color);
+    font-weight: bold;
 }
 
 .product-section {
     display: flex;
     margin-top: 20px;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid var(--medium-blue);
     padding-bottom: 20px;
 }
 
@@ -111,7 +115,7 @@ nav a {
 .cons {
     width: 48%;
     padding: 20px;
-    border: 1px solid #ccc;
+    border: 1px solid var(--light-blue);
     background-color: var(--secondary-color);
 }
 
@@ -146,7 +150,7 @@ nav a {
 
 .related-products li {
     width: 30%;
-    border: 1px solid #ccc;
+    border: 1px solid var(--medium-blue);
     padding: 20px;
     text-align: center;
 }
@@ -179,7 +183,7 @@ nav a {
 .form-group textarea {
     width: 100%;
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid var(--medium-blue);
     border-radius: 5px;
 }
 
