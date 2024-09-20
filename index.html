@@ -8,7 +8,7 @@
 </head>
 <body>
     <header>
-        <div class="container">
+        <div class="header-container">
             <div class="logo">
                 <img src="images/logo.png" alt="Bodyguard Agency Logo">
             </div>
@@ -23,75 +23,77 @@
     </header>
 
     <main>
-        <section class="product-section container">
-            <div class="product-image">
-                <img src="images/Bodyguard1.png" alt="Bodyguard Image">
-            </div>
-            <div class="product-details">
-                <h1 class="product-title">Hire a Bodyguard</h1>
-                <p class="product-price">Starting at €1500 per day</p>
-                <p class="product-description">Height: 6'2" | Strength: Lifts 200kg | Mastered Fighting Styles: Jiu-Jitsu, Taekwondo, Boxing</p>
-                <button class="button">Hire Now</button>
-            </div>
-        </section>
+        <div class="main-container">
+            <section class="product-section">
+                <div class="product-image">
+                    <img src="images/Bodyguard1.png" alt="Bodyguard Image">
+                </div>
+                <div class="product-details">
+                    <h1 class="product-title">Hire a Bodyguard</h1>
+                    <p class="product-price">Starting at €1500 per day</p>
+                    <p class="product-description">Height: 6'2" | Strength: Lifts 200kg | Mastered Fighting Styles: Jiu-Jitsu, Taekwondo, Boxing</p>
+                    <button class="button">Hire Now</button>
+                </div>
+            </section>
 
-        <section class="pros-cons container">
-            <div class="pros">
-                <h2>Bodyguard Details</h2>
+            <section class="pros-cons">
+                <div class="pros">
+                    <h2>Bodyguard Details</h2>
+                    <ul>
+                        <li>✓ Excellent close combat skills</li>
+                        <li>✓ Trained in tactical defense</li>
+                    </ul>
+                </div>
+                <div class="cons">
+                    <h2>About</h2>
+                    <p>This bodyguard has a background in law enforcement and provides the highest level of protection. Perfect for high-risk security situations or personal safety services.</p>
+                </div>
+            </section>
+
+            <section class="related-products">
+                <h2>Other Bodyguards</h2>
                 <ul>
-                    <li>✓ Excellent close combat skills</li>
-                    <li>✓ Trained in tactical defense</li>
+                    <li>
+                        <img src="images/Bodyguard2.png" alt="Bodyguard 2">
+                        <h3>Bodyguard 2</h3>
+                        <p>Height: 6'5" | Strength: Lifts 220kg | Fighting Styles: Krav Maga, Muay Thai</p>
+                    </li>
+                    <li>
+                        <img src="images/Bodyguard3.png" alt="Bodyguard 3">
+                        <h3>Bodyguard 3</h3>
+                        <p>Height: 6'3" | Strength: Lifts 180kg | Fighting Styles: Judo, Brazilian Jiu-Jitsu</p>
+                    </li>
+                    <li>
+                        <img src="images/Bodyguard4.png" alt="Bodyguard 4">
+                        <h3>Bodyguard 4</h3>
+                        <p>Height: 6'4" | Strength: Lifts 210kg | Fighting Styles: Karate, Kickboxing</p>
+                    </li>
                 </ul>
-            </div>
-            <div class="cons">
-                <h2>About</h2>
-                <p>This bodyguard has a background in law enforcement and provides the highest level of protection. Perfect for high-risk security situations or personal safety services.</p>
-            </div>
-        </section>
+            </section>
 
-        <section class="related-products container">
-            <h2>Other Bodyguards</h2>
-            <ul>
-                <li>
-                    <img src="images/Bodyguard2.png" alt="Bodyguard 2">
-                    <h3>Bodyguard 2</h3>
-                    <p>Height: 6'5" | Strength: Lifts 220kg | Fighting Styles: Krav Maga, Muay Thai</p>
-                </li>
-                <li>
-                    <img src="images/Bodyguard3.png" alt="Bodyguard 3">
-                    <h3>Bodyguard 3</h3>
-                    <p>Height: 6'3" | Strength: Lifts 180kg | Fighting Styles: Judo, Brazilian Jiu-Jitsu</p>
-                </li>
-                <li>
-                    <img src="images/Bodyguard4.png" alt="Bodyguard 4">
-                    <h3>Bodyguard 4</h3>
-                    <p>Height: 6'4" | Strength: Lifts 210kg | Fighting Styles: Karate, Kickboxing</p>
-                </li>
-            </ul>
-        </section>
-
-        <section class="contact container" id="contact">
-            <h2>Contact Us</h2>
-            <form action="#" method="post">
-                <div class="form-group">
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required>
-                </div>
-                <div class="form-group">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                <div class="form-group">
-                    <label for="message">Message:</label>
-                    <textarea id="message" name="message" rows="4" required></textarea>
-                </div>
-                <button type="submit" class="button">Submit</button>
-            </form>
-        </section>
+            <section class="contact" id="contact">
+                <h2>Contact Us</h2>
+                <form action="#" method="post">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="button">Submit</button>
+                </form>
+            </section>
+        </div>
     </main>
 
     <footer>
-        <div class="container">
+        <div class="footer-container">
             <p>&copy; 2024 Bodyguard Agency. All rights reserved.</p>
             <p><a href="#">Privacy Policy</a> | <a href="#">Terms & Conditions</a> | <a href="#">Cookie Policy</a> | <a href="#">Contact</a></p>
         </div>

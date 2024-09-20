@@ -16,19 +16,23 @@ body {
     background-color: var(--secondary-color);
 }
 
-.container {
+/* Container for header */
+.header-container {
     max-width: 960px;
     margin: 0 auto;
     padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 header {
     background-color: var(--light-blue);
-    padding: 20px 0;
+    padding: 5px 0;
 }
 
 .logo img {
-    width: 250px;
+    max-width: 70px;
 }
 
 nav ul {
@@ -36,7 +40,6 @@ nav ul {
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: flex-end;
 }
 
 nav li {
@@ -47,6 +50,19 @@ nav a {
     text-decoration: none;
     color: var(--primary-color);
     font-weight: bold;
+    padding: 10px 15px;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: var(--accent-color);
+}
+
+/* Container for main content */
+.main-container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
 .product-section {
@@ -187,12 +203,21 @@ nav a {
     border-radius: 5px;
 }
 
+/* Container for footer */
+.footer-container {
+    max-width: 960px;
+    max-height: 50px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
 footer {
     background-color: var(--primary-color);
     color: #fff;
-    padding: 20px 0;
     text-align: center;
-    margin-top: 40px;
+    padding-bottom: 20px;
+    margin-top: 20px;
+    bottom: 0% ;
 }
 
 footer a {
