@@ -1,28 +1,38 @@
-/* Adjust the body and container styling for proper margin and padding */
+:root {
+    --primary-color: #176B87;
+    --secondary-color: #EEF5FF;
+    --accent-color: #FF0000;
+    --light-blue: #B4D4FF;
+    --medium-blue: #86B6F6;
+    --font-primary: 'pf-uniform', sans-serif;
+    --font-size-large: 1.5em;
+}
+
 body {
     font-family: var(--font-primary);
     line-height: 1.6;
     margin: 0;
     padding: 0;
     background-color: var(--secondary-color);
-    overflow-x: hidden; /* Prevent horizontal scroll */
 }
 
-/* Adjust the container widths and padding */
-.header-container, .main-container, .footer-container {
+/* Container for header */
+.header-container {
     max-width: 960px;
     margin: 0 auto;
     padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-/* Header Styling */
 header {
     background-color: var(--light-blue);
-    padding: 20px 0;
+    padding: 5px 0;
 }
 
 .logo img {
-    max-width: 100px; /* Adjust the logo size */
+    max-width: 70px;
 }
 
 nav ul {
@@ -30,7 +40,6 @@ nav ul {
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: flex-end; /* Right align navigation */
 }
 
 nav li {
@@ -49,7 +58,7 @@ nav a:hover {
     color: var(--accent-color);
 }
 
-/* Main Content Styling */
+/* Container for main content */
 .main-container {
     max-width: 960px;
     margin: 0 auto;
@@ -58,16 +67,13 @@ nav a:hover {
 
 .product-section {
     display: flex;
-    flex-wrap: wrap; /* Ensure content wraps on smaller screens */
     margin-top: 20px;
     border-bottom: 1px solid var(--medium-blue);
     padding-bottom: 20px;
 }
 
 .product-image {
-    width: 100%; /* Make images responsive */
-    max-width: 400px; /* Limit max width */
-    margin: 0 auto; /* Center align */
+    width: 40%;
     padding-right: 20px;
     display: flex;
     justify-content: center;
@@ -80,9 +86,8 @@ nav a:hover {
 }
 
 .product-details {
-    width: 100%; /* Full width on small screens */
-    padding: 20px;
-    text-align: center; /* Center text */
+    width: 60%;
+    padding-left: 20px;
 }
 
 .product-title {
@@ -117,7 +122,6 @@ nav a:hover {
 
 .pros-cons {
     display: flex;
-    flex-wrap: wrap; /* Ensure content wraps on smaller screens */
     justify-content: space-between;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -125,16 +129,26 @@ nav a:hover {
 
 .pros,
 .cons {
-    width: 100%; /* Full width on small screens */
-    margin-bottom: 20px; /* Spacing on small screens */
+    width: 48%;
     padding: 20px;
     border: 1px solid var(--light-blue);
     background-color: var(--secondary-color);
 }
 
+.pros ul,
+.cons ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.pros li,
+.cons li {
+    margin-bottom: 10px;
+}
+
 .related-products {
     margin-top: 40px;
-    text-align: center; /* Center align title */
 }
 
 .related-products h2 {
@@ -147,14 +161,11 @@ nav a:hover {
     margin: 0;
     padding: 0;
     display: flex;
-    flex-wrap: wrap; /* Wrap on smaller screens */
-    justify-content: center; /* Center content */
+    justify-content: space-between;
 }
 
 .related-products li {
-    width: 100%; /* Full width on small screens */
-    max-width: 300px; /* Max width for larger screens */
-    margin: 10px;
+    width: 30%;
     border: 1px solid var(--medium-blue);
     padding: 20px;
     text-align: center;
@@ -168,7 +179,6 @@ nav a:hover {
 
 .contact {
     margin-top: 40px;
-    text-align: center; /* Center align contact form */
 }
 
 .contact h2 {
@@ -183,7 +193,6 @@ nav a:hover {
 .form-group label {
     display: block;
     margin-bottom: 5px;
-    text-align: left; /* Align labels to left */
 }
 
 .form-group input,
@@ -194,13 +203,10 @@ nav a:hover {
     border-radius: 5px;
 }
 
-.form-group textarea {
-    resize: vertical; /* Allow vertical resizing */
-}
-
-/* Footer Styling */
+/* Container for footer */
 .footer-container {
     max-width: 960px;
+    max-height: 50px;
     margin: 0 auto;
     padding: 20px;
 }
@@ -209,8 +215,9 @@ footer {
     background-color: var(--primary-color);
     color: #fff;
     text-align: center;
-    padding: 20px 0;
-    position: relative; /* Ensure footer stays at the bottom */
+    padding-bottom: 20px;
+    margin-top: 20px;
+    bottom: 0% ;
 }
 
 footer a {
@@ -218,4 +225,3 @@ footer a {
     text-decoration: none;
     margin: 0 10px;
 }
-
