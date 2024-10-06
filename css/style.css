@@ -16,6 +16,7 @@ body {
     background-color: var(--secondary-color);
 }
 
+/* Header Container */
 .header-container {
     max-width: 960px;
     margin: 0 auto;
@@ -57,7 +58,7 @@ nav a:hover {
     color: var(--accent-color);
 }
 
-
+/* Main Content */
 .main-container {
     max-width: 960px;
     margin: 0 auto;
@@ -119,6 +120,7 @@ nav a:hover {
     background-color: var(--accent-color);
 }
 
+/* Pros and Cons */
 .pros-cons {
     display: flex;
     justify-content: space-between;
@@ -146,6 +148,7 @@ nav a:hover {
     margin-bottom: 10px;
 }
 
+/* Related Products */
 .related-products {
     margin-top: 40px;
 }
@@ -176,6 +179,7 @@ nav a:hover {
     margin-bottom: 10px;
 }
 
+/* Contact Form */
 .contact {
     margin-top: 40px;
 }
@@ -202,7 +206,7 @@ nav a:hover {
     border-radius: 5px;
 }
 
-
+/* Footer */
 .footer-container {
     max-width: 960px;
     max-height: 50px;
@@ -216,11 +220,79 @@ footer {
     text-align: center;
     padding-bottom: 20px;
     margin-top: 20px;
-    bottom: 0% ;
 }
 
 footer a {
     color: #fff;
     text-decoration: none;
     margin: 0 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header-container,
+    .footer-container {
+        flex-direction: column;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .product-section {
+        flex-direction: column;
+    }
+
+    .product-image,
+    .product-details {
+        width: 100%;
+        padding: 0;
+    }
+
+    .pros-cons {
+        flex-direction: column;
+    }
+
+    .pros,
+    .cons {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .related-products ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .related-products li {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .main-container,
+    .footer-container {
+        padding: 0 10px;
+    }
+
+    .product-title,
+    .related-products h2,
+    .contact h2 {
+        font-size: 1.5em;
+    }
+
+    .form-group label {
+        font-size: 0.9em;
+    }
 }
