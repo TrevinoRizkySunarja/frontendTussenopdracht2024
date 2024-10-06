@@ -16,7 +16,6 @@ body {
     background-color: var(--secondary-color);
 }
 
-/* Header Container */
 .header-container {
     max-width: 960px;
     margin: 0 auto;
@@ -58,7 +57,6 @@ nav a:hover {
     color: var(--accent-color);
 }
 
-/* Main Content */
 .main-container {
     max-width: 960px;
     margin: 0 auto;
@@ -120,7 +118,6 @@ nav a:hover {
     background-color: var(--accent-color);
 }
 
-/* Pros and Cons */
 .pros-cons {
     display: flex;
     justify-content: space-between;
@@ -148,7 +145,6 @@ nav a:hover {
     margin-bottom: 10px;
 }
 
-/* Related Products */
 .related-products {
     margin-top: 40px;
 }
@@ -179,7 +175,6 @@ nav a:hover {
     margin-bottom: 10px;
 }
 
-/* Contact Form */
 .contact {
     margin-top: 40px;
 }
@@ -206,7 +201,6 @@ nav a:hover {
     border-radius: 5px;
 }
 
-/* Footer */
 .footer-container {
     max-width: 960px;
     max-height: 50px;
@@ -228,7 +222,6 @@ footer a {
     margin: 0 10px;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
     .header-container,
     .footer-container {

@@ -23,7 +23,6 @@ html, body {
     background-color: var(--secondary-color);
 }
 
-/* Header Container */
 .header-container {
     max-width: 960px;
     margin: 0 auto;
@@ -65,7 +64,6 @@ nav a:hover {
     color: var(--accent-color);
 }
 
-/* Body Layout */
 body {
     display: flex;
     flex-direction: column;
@@ -76,7 +74,6 @@ main {
     flex: 1;
 }
 
-/* Contact Section */
 .contact {
     max-width: 960px;
     padding: 0 50px;
@@ -96,7 +93,6 @@ main {
     margin-top: 20px;
 }
 
-/* Form Group */
 .form-group {
     margin-bottom: 20px;
 }
@@ -115,7 +111,6 @@ main {
     border-radius: 5px;
 }
 
-/* First and Last Name Side by Side */
 .name-fields {
     display: flex;
     justify-content: space-between;
@@ -125,7 +120,6 @@ main {
     width: 48%;
 }
 
-/* Place and Date Side by Side */
 .place-date {
     display: flex;
     justify-content: space-between;
@@ -135,7 +129,6 @@ main {
     width: 48%;
 }
 
-/* Newsletter Subscription */
 #newsletter-subscription {
     display: flex;
     align-items: center;
@@ -150,13 +143,11 @@ main {
     width: auto;
 }
 
-/* Checkbox and Radio */
 .form-group input[type="checkbox"],
 .form-group input[type="radio"] {
     width: auto;
 }
 
-/* Aligning Checkbox and Label for Terms */
 .form-group-inline {
     display: flex;
     align-items: center;
@@ -166,7 +157,6 @@ main {
     margin-right: 10px;
 }
 
-/* Button Styles */
 .button {
     background-color: var(--primary-color);
     color: #fff;
@@ -182,7 +172,6 @@ main {
     background-color: var(--accent-color);
 }
 
-/* Footer */
 .footer-container {
     max-width: 960px;
     margin: 0 auto;
@@ -205,7 +194,6 @@ footer a {
     margin: 0 10px;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
     .header-container, .footer-container {
         flex-direction: column;
