@@ -23,7 +23,6 @@ html, body {
     background-color: var(--secondary-color);
 }
 
-/* Container for header */
 .header-container {
     max-width: 960px;
     margin: 0 auto;
@@ -65,7 +64,6 @@ nav a:hover {
     color: var(--accent-color);
 }
 
-/* Full height layout for sticky footer */
 body {
     display: flex;
     flex-direction: column;
@@ -76,13 +74,13 @@ main {
     flex: 1;
 }
 
-/* Contact Section */
 .contact {
     max-width: 960px;
     padding: 0 50px;
     margin-top: 50px;
     margin: auto;
     width: 600px; 
+    margin-bottom: 20px;
 }
 
 .contact-spot {
@@ -104,11 +102,31 @@ main {
 }
 
 .form-group input,
-.form-group textarea {
+.form-group textarea,
+.form-group select {
     width: 100%;
     padding: 10px;
     border: 1px solid var(--medium-blue);
     border-radius: 5px;
+}
+
+#newsletter-subscription {
+    display: flex;
+    align-items: center;
+}
+
+#newsletter-subscription label {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#newsletter-subscription input[type="radio"] {
+    width: auto;
+}
+
+.form-group input[type="checkbox"],
+.form-group input[type="radio"] {
+    width: auto;
 }
 
 .button {
@@ -125,7 +143,6 @@ main {
     background-color: var(--accent-color);
 }
 
-/* Footer styles */
 .footer-container {
     max-width: 960px;
     margin: 0 auto;

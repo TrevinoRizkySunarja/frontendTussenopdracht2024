@@ -16,7 +16,6 @@ body {
     background-color: var(--secondary-color);
 }
 
-/* Container for header */
 .header-container {
     max-width: 960px;
     margin: 0 auto;
@@ -58,7 +57,7 @@ nav a:hover {
     color: var(--accent-color);
 }
 
-/* Container for main content */
+
 .main-container {
     max-width: 960px;
     margin: 0 auto;
@@ -203,7 +202,7 @@ nav a:hover {
     border-radius: 5px;
 }
 
-/* Container for footer */
+
 .footer-container {
     max-width: 960px;
     max-height: 50px;
